@@ -6,7 +6,6 @@ import {useState} from 'react'
 import {NFTCard} from '../components/nftCard';
 import Pagination from '../components/Pagination';
 
-const api_key = "1XC8ix6qPvu-kQSq3KTHDgDCY-WiOVMm"
 const Home = () => {
   const [wallet, setWalletAddress] = useState("");
   const [collection, setCollectionAddress] = useState("");
@@ -23,7 +22,8 @@ const Home = () => {
       var requestOptions = {
         method: 'GET'
       };
-      const api_key = "1XC8ix6qPvu-kQSq3KTHDgDCY-WiOVMm"
+      const api_key = process.env.NEXT_PUBLIC_apiKey;
+      console.log(process.env.NEXT_PUBLIC_ANALYTICS_ID);
       const baseURL = `https://eth-mainnet.alchemyapi.io/v2/${api_key}/getNFTsForCollection/`;
       const fetchURL = `${baseURL}?contractAddress=${collection}&withMetadata=${"true"}`;
       const nfts = await fetch(fetchURL, requestOptions).then(data => data.json())
@@ -37,7 +37,7 @@ const Home = () => {
   const fetchNFTs = async() => {
     let nfts; 
     console.log("fetching nfts");
-    const api_key = "1XC8ix6qPvu-kQSq3KTHDgDCY-WiOVMm"
+    const api_key = process.env.NEXT_PUBLIC_apiKey;
     const baseURL = `https://eth-mainnet.alchemyapi.io/v2/${api_key}/getNFTs/`;
     var requestOptions = {
         method: 'GET'
@@ -65,7 +65,7 @@ const Home = () => {
    const indexOfFirstPost = indexOfLastPost - nftsPerPage
    const currentNFTs = NFTs.slice(indexOfFirstPost, indexOfLastPost)
 
-   const paginate = (pageNumber) => setCurrentPage(currentPage + 1)
+   const paginate = (pageNumber) => setCurrentPage(pageNumber)
 
 
   return(
