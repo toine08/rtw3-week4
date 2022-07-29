@@ -1,5 +1,5 @@
 import * as React from "react";
-import { ConstructorExpression } from 'assemblyscript'
+//import { ConstructorExpression } from 'assemblyscript'
 import type { NextPage } from 'next'
 import Head from 'next/head'
 import Image from 'next/image'
