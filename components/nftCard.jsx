@@ -2,12 +2,12 @@ import Link from 'next/link'
 export const NFTCard = ({nft, loading}) => {
 
     return(
-        <div className="w-1/4 flex flex-col rounded-md border-2 border-black">
-            <div className="rounded-md border-b-1 border-black">
+        <div className="w-1/4 flex flex-col rounded-md border border-black">
+            <div className="">
             <img key={nft.media} className="object-cover h-128 w-full rounded-t-md" src={nft.media[0].gateway} ></img>
 
             </div>
-            <div className="flex flex-col y-gap-2 px-2 py-3 bg-slate-100 rounded-b-md h-110">
+            <div className="flex flex-col y-gap-2 px-2 py-3 bg-slate-100 rounded-b-md h-full">
                 <div className="">
                     <h2 key={nft.title} className="text-xl text-gray-800">{nft.title}</h2>
                     <p key={nft.id.tokenId} className="text-gray-600">Id: {nft.id.tokenId.substr(nft.id.tokenId.length -4)}</p>
