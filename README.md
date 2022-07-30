@@ -1,23 +1,32 @@
-# Next.js + Tailwind CSS Example
+# NFT WATCHER
 
-This example shows how to use [Tailwind CSS](https://tailwindcss.com/) [(v3.0)](https://tailwindcss.com/blog/tailwindcss-v3) with Next.js. It follows the steps outlined in the official [Tailwind docs](https://tailwindcss.com/docs/guides/nextjs).
+## A bit of background
 
-## Deploy your own
+This site was made as part of the roadtoweb3 programme created by alchemy.
 
-Deploy the example using [Vercel](https://vercel.com?utm_source=github&utm_medium=readme&utm_campaign=next-example) or preview live with [StackBlitz](https://stackblitz.com/github/vercel/next.js/tree/canary/examples/with-tailwindcss)
+The goal of this week was to create an NFT watcher in wallet or to be able to see a whole collection.
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/git/external?repository-url=https://github.com/vercel/next.js/tree/canary/examples/with-tailwindcss&project-name=with-tailwindcss&repository-name=with-tailwindcss)
+## What technologies I used ?
 
-## How to use
+For this project, I used [Nextjs](http://nextjs.com), as well as [tailwindcss](https://tailwindcss.com/) for the styling but also [alchemy](http://alchemy.com/nft-api) API to be able to have access to the data to display the NFTs.
 
-Execute [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app) with [npm](https://docs.npmjs.com/cli/init) or [Yarn](https://yarnpkg.com/lang/en/docs/cli/create/) to bootstrap the example:
+The site was finished and deployed thanks to [Vercel](http://vercel.com). You can access it here: [https://nft-watcher.vercel.app](https://nft-watcher.vercel.app/)
 
-```bash
-npx create-next-app --example with-tailwindcss with-tailwindcss-app
-# or
-yarn create next-app --example with-tailwindcss with-tailwindcss-app
-# or
-pnpm create next-app -- --example with-tailwindcss with-tailwindcss-app
+## Difficulties
+
+The biggest difficulty was choosing colours to match (I'm still not happy with it but it's what I like most). The styling with tailwind, I had some difficulty making it work but their documentation is rich and very nice to read.
+
+## Clone my project
+
+if you want to take over my project you can do these steps
+
+```jsx
+git clone https://github.com/toine08/rtw3-week4.git
+cd rtw3-week4
+npm install
 ```
 
-Deploy it to the cloud with [Vercel](https://vercel.com/new?utm_source=github&utm_medium=readme&utm_campaign=next-example) ([Documentation](https://nextjs.org/docs/deployment)).
+## Thank you
+
+Thank you alchemy and their road to web 3 project
+You can sign up [here](https://alchemyapi.typeform.com/web3-pioneers) and join the [telegram](https://t.me/+kSVKod0rKbNkOTA5) group and the alchemy [discord](https://www.alchemy.com/discord).
