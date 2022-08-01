@@ -1,5 +1,15 @@
 # NFT WATCHER
 
+## How to use it
+
+![https://i.imgur.com/tMIlYEY.gif](https://i.imgur.com/tMIlYEY.gif)
+
+Really simple actually, just had your wallet address on the Input and you will be able to see all our NFTs from ethereum mainnet.
+
+If you want to see all the NFTs from a collections you can copy the address collection and click on fetch for collection and past the collection address on the input.
+
+That is no connection needed!
+
 ## A bit of background
 
 This site was made as part of the roadtoweb3 programme created by alchemy.
