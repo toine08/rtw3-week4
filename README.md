@@ -8,7 +8,7 @@ Really simple actually, just had your wallet address on the Input and you will b
 
 If you want to see all the NFTs from a collections you can copy the address collection and click on fetch for collection and past the collection address on the input.
 
-That is no connection needed!
+That is it, no connection needed!
 
 ## A bit of background
 
